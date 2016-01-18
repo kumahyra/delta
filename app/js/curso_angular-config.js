@@ -1,0 +1,1 @@
+angular.module('curso_angular',  ['ngMessages', 'toastr', 'ui.grid']);//declaracao do module principal
