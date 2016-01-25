@@ -1,3 +1,6 @@
-<div ng-controller="pesquisaPessoaController">
-    {{nome}}
+<div ng-controller="pesquisaPessoaController as vm">
+    {{vm.nome}}
+    <br>
+    <button class="btn btn-default"
+    ng-click="redirecionaParaCadastro()">Cadastro Pessoa</button>
 </div>

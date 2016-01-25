@@ -26,35 +26,15 @@
     <script src="app/js/curso_angular.module.js"></script>
     <script src="app/js/curso_angular.config.js"></script>
 
-    <script src="app/js/controller/index.controller3.js"></script>
+    <script src="app/js/controller/index.controller4.js"></script>
     <script src="app/arquitetura/service/alert.service.js"></script>
     <script src="app/arquitetura/filter/maiusculo.js"></script>
+    <script src="app/arquitetura/directive/ca-span/ca-span.directive.js"></script>
 
 </head>
 <body ng-app="curso_angular">
-<div ng-controller="IndexController3 as vm" class="container">
-
-    <button class="btn btn-success" ng-click="dispararEvento()">
-        Dispara Evento
-    </button>
-
-    <button class="btn btn-default" ui-sref="home">
-        Home
-    </button>
-
-    <button class="btn btn-success" ui-sref="menu">
-        Menu
-    </button>
-
-    <button class="btn btn-warning" ui-sref="cadastroPessoa">
-        Cadastro Pessoa
-    </button>
-
-    <button class="btn btn-danger" ui-sref="pesquisaPessoa">
-        Pesquisa de Pessoa
-    </button>
-
-    <div ui-view></div>
+<div ng-controller="IndexController4 as vmIndex" class="container">
+    <ca-span></ca-span>
 </div>
 
 </body>
