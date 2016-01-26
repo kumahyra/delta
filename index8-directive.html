@@ -30,12 +30,28 @@
     <script src="app/arquitetura/service/alert.service.js"></script>
     <script src="app/arquitetura/filter/maiusculo.js"></script>
     <script src="app/arquitetura/directive/ca-span/ca-span.directive.js"></script>
+    <script src="app/arquitetura/directive/ca-input-text/ca-input-text.directive.js"></script>
 
 </head>
 <body ng-app="curso_angular">
 <div ng-controller="IndexController4 as vmIndex" class="container">
-    <ca-span></ca-span>
-</div>
+    <ca-span texto="Kumahyra Javaé"></ca-span>
 
+    <div class="row">
+        <ca-input-text label="Nome"
+                       colspan="4"
+                       ng-model="vmIndex.entidade.nome"
+                       ng-required="true"
+                       maxlength="5">
+        </ca-input-text>
+
+        <ca-input-text label="Sobrenome"
+                       colspan="4"
+                       ng-model="vmIndex.entidade.sobrenome">
+        </ca-input-text>
+
+    </div>
+    {{vmIndex.entidade}}
+</div>
 </body>
 </html>

@@ -101,6 +101,19 @@
                     expand: true,
                     src: 'build/source.css'
                 }
+            },
+            ngdocs: {
+                options: {
+                    dest: 'docs',
+                    title: 'Docs',
+                    html5Mode: false
+                },
+                delta: {
+                    src: [
+                        'app/**/*.js',
+                        'arquitetura/**/*.js'
+                    ]
+                }
             }
         });
         grunt.registerTask('build',
@@ -112,7 +125,8 @@
                 'autoprefixer',
                 'uglify',
                 'cssmin',
-                'htmlmin'
+                'htmlmin',
+                'ngdocs'
             ]);
     };
 })();

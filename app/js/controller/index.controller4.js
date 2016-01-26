@@ -7,6 +7,6 @@
 
     function IndexController4(){
         var vm = this;
-
+        vm.entidade = {};
     }
 })();
