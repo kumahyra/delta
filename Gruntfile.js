@@ -17,7 +17,7 @@
                 ]
             },
             copy:{
-                curso_angular: {
+                cursoangular: {
                     files: [
                         {
                             expand: true,
@@ -114,6 +114,13 @@
                         'arquitetura/**/*.js'
                     ]
                 }
+            },
+            less:{
+                app:{
+                    files:{
+                        'app/arquitetura/style/ca-style.css': 'app/arquitetura/less/ca-style.less'
+                    }
+                }
             }
         });
         grunt.registerTask('build',
@@ -122,11 +129,13 @@
                 'copy',
                 'ngAnnotate',
                 'concat',
+                'less',
                 'autoprefixer',
                 'uglify',
                 'cssmin',
                 'htmlmin',
                 'ngdocs'
+
             ]);
     };
 })();

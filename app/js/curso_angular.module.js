@@ -19,7 +19,8 @@
         'curso_angular.service',
         'curso_angular.factory',
         'curso_angular.directive',
-        'curso_angular.filter'
+        'curso_angular.filter',
+        'angular-keycode'
     ]);
 })();
 

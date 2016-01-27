@@ -28,7 +28,7 @@
             scope: {
                 label: '@',
                 colspan: '@',
-                ngModel: '=',
+                ngModel: '=?',
                 ngRequired: '=',
                 maxlength: '@'
             }
